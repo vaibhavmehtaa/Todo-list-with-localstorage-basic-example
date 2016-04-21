@@ -22,9 +22,6 @@ In effect, this is what the project tree should look like:
     +-- images/
     +-- js/
     +-- css/
-        
-    +-- scss/
-    +-- index.html
 +-- www/
     +-- config/
     +-- constants/
