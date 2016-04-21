@@ -55,7 +55,7 @@ First-time project setup consists of:
 
 Once you've installed Node.js and `npm` on your system, install `bower`, `grunt-cli` and  globally, like so:
 ```
-$ npm install -g bower-cli grunt eslint
+$ npm install -g bower-cli grunt 
 ```
 
 Once you've installed Ruby and `gem` on your system, install the `sass` gem like so:
