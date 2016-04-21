@@ -1,0 +1,61 @@
+<div class="col-md-12 pad-0 task-wrapper">
+    <div class="col-md-6 pad-0">
+        <div class="task task-today">
+            <div class="col-md-12">
+                <h3>TODAY'S TASK</h3>
+                <form ng-submit="addNewTask()">
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="text" class="form-control" ng-model="formData.newTask" placeholder="Enter task to be done" required>
+                        </div>
+                    </div>
+                </form>
+                <div class="task-manager">
+                    <ul class="list-unstyled">
+                        <li ng-repeat="task in pendingTask track by $index">
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox_{{task.id}}" ng-click="markDone(task.id)">
+                                <label for="checkbox_{{task.id}}">{{task.msg}} </label>
+                            </div>
+                            <span class="cross-btn pointer" ng-click="removeTask(task.id)">
+                            <i class="fa fa-times-circle text-black" aria-hidden="true"></i>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 pad-0">
+        <div class="task task-finished">
+            <div class="col-md-12">
+                <h3>FINISHED TODAYS'S TASK</h3>
+                <div class="task-manager ">
+                    <ul class="list-unstyled no-operation">
+                        <li ng-repeat="task in finishTask track by $index">
+                            {{task.msg}}
+                            <span class="cross-btn pointer" ng-click="removeTask(task.id)">
+                            <i class="fa fa-times-circle text-black" aria-hidden="true"></i>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="task task-history">
+            <div class="col-md-12">
+                <h3>TASK HISTORY</h3>
+                <div class="task-manager ">
+                    <ul class="list-unstyled no-operation">
+                        <li ng-repeat="task in taskHistory track by $index">
+                            {{task.msg}}
+                            <span class="cross-btn pointer" ng-click="removeTask(task.id)">
+                            <i class="fa fa-times-circle text-black" aria-hidden="true"></i>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

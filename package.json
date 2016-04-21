@@ -1,0 +1,24 @@
+{
+  "name": "thought",
+  "version": "0.1.0",
+  "description": "assignment",
+  "main": "index.js",
+  "scripts": {
+    "setnpm": "npm install",
+    "boot": "bower install",
+    "start": "npm run setnpm & npm run boot & grunt & grunt watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-sass": "^1.1.0",
+    "grunt-serve": "^0.1.6"
+  }
+}

@@ -1,0 +1,65 @@
+@import "../settings/variables";
+@import "../settings/mixins";
+
+
+
+body{
+	color: $white;
+}
+
+.pad-0 {
+    padding: 0;
+}
+
+.form-control{
+	border-radius: 1px;
+}
+.task-wrapper {
+
+    .task {
+        padding: 15px;
+    }
+    .task-today {
+        background-color: $light-blue;
+        height: 100vh;
+    }
+    .task-finished {
+        background-color: $medium-blue;
+        height: 50vh;
+    }
+    .task-history {
+        background-color: $dark-blue;
+        height: 50vh;
+    }
+    .task-manager{
+    	ul{
+            &.no-operation{
+                li{
+                    padding: 5px 0;
+                }
+            }
+    		li{
+    			position: relative;
+    			width: 100%;
+    		.cross-btn{
+    			position: absolute;
+    			right: 5px;
+                top: 0;
+    		}
+            label{
+                &:hover{
+                text-decoration:line-through;
+            }    
+            }
+            
+    		}
+    	}
+    }
+}
+
+.text-black{
+	color: $gray-base;
+}
+.pointer{
+	cursor: pointer;
+}
