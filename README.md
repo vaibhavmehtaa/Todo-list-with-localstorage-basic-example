@@ -44,7 +44,7 @@ In effect, this is what the project tree should look like:
 ## Project setup
 
 First-time project setup consists of:
-* installing Node.js, `npm`, `grunt`, `bower-cli`
+* installing Node.js, `npm`, `bower`, `grunt-cli`
 * installing Ruby, `gem` and `sass`
 * installing dev-dependencies (`npm` packages)
 * installing front-end dependencies (`bower` packages)
@@ -52,7 +52,7 @@ First-time project setup consists of:
 
 Once you've installed Node.js and `npm` on your system, install `bower`, `grunt-cli` and  globally, like so:
 ```
-$ npm install -g bower-cli grunt 
+$ npm install -g grunt-cli bower 
 ```
 
 Once you've installed Ruby and `gem` on your system, install the `sass` gem like so:
