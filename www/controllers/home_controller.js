@@ -1,8 +1,3 @@
-/**
- * Author: vaibhav mehta
- * company: grofers
- * created: 19 dec 15
- */
 
 app.controller('homeCtrl', function($scope) {
 

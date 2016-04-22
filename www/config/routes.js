@@ -1,8 +1,3 @@
-/**
- * Author: Vaibhav Mehta
- * Company: Grofers
- * Created: 19 Dec 15
- */
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
