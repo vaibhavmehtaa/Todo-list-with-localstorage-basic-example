@@ -1,5 +1,7 @@
-# Thoughtworks
-An assignment
+Todo list task manager have three panels like create task, finished section and history section. the create section allow to add task and remove task also provide a list of task here you can manage tasks and mart as a complete task. the complete task moved into the finished task. older and finished task will be showing in the history section
+
+
+Purpose for public repo: quick start of angular apps.
 
 
 #Project structure
